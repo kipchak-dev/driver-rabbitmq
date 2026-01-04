@@ -25,8 +25,8 @@ class RabbitMQ implements Interfaces\Driver
         $queues = $connection['queues'];
         unset($connection['queues']);
         foreach ((array) $queues as $queue) {
-            self::$container->set('drivers.queue.rabbitmq.' . $queue, function (ContainerInterface $c) use ($connection, $queue): Queue {
-                return new Queue($connection, Logger::get(), $queue, 'kipchak.rabbitmq.driver');
+            self::$container->set('drivers.queue.rabbitmq.' . $queue['name'], function (ContainerInterface $c) use ($connection, $queue): Queue {
+                return new Queue($connection, Logger::get(), $queue['name'], $queue['channel']);
             });
         }
 

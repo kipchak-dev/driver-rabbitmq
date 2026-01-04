@@ -29,8 +29,9 @@ return [
     'isSecure' => env('RABBITMQ_IS_SECURE', false),
     'sslVerify' => env('RABBITMQ_SSL_VERIFY', false),
     'queues' => [
-        'queue-name-1',
-        'queue-name-2',
+        // Channel must be a unique integer
+        ['name' => 'queue-name-1', 'channel' => 1],
+        ['name' => 'queue-name-2', 'channel' => 2]
     ]
 ];
 ```
@@ -42,10 +43,17 @@ Install it via composer: `composer require kipchak/driver-rabbitmq`.
 ### Example Usage
 
 ```php
-// Load the HTTP driver.
+// Initialise the driver in drivers/drivers.php
+\Mamluk\Kipchak\Driver\RabbitMQ\RabbitMQ::iniitalise($container);
+
+// Load the HTTP driver in a controller or service
 $queue = \Mamluk\Kipchak\Driver\RabbitMQ\RabbitMQ::get('queue-name-1');
 // Use the $queue client as you would the mamluk/tavshan client.
 ```
+
+## Detailed Documentation
+
+https://kipchak.dev/docs/driver-rabbitmq
 
 ## What is a Kipchak Driver?
 
