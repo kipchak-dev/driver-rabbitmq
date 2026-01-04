@@ -46,7 +46,7 @@ Install it via composer: `composer require kipchak/driver-rabbitmq`.
 // Initialise the driver in drivers/drivers.php
 \Mamluk\Kipchak\Driver\RabbitMQ\RabbitMQ::iniitalise($container);
 
-// Load the HTTP driver in a controller or service
+// Load the Rabbit driver in a controller or service
 $queue = \Mamluk\Kipchak\Driver\RabbitMQ\RabbitMQ::get('queue-name-1');
 // Use the $queue client as you would the mamluk/tavshan client.
 ```
