@@ -1401,7 +1401,7 @@
             "version": "1.4",
             "source": {
                 "type": "git",
-                "url": "https://1x.ax/mamluk/tavshan",
+                "url": "https://1x.ax/mamluk/library/tavshan",
                 "reference": "19b558c75b04871b8bc5a6439ad7e426509e2bc2"
             },
             "require": {
