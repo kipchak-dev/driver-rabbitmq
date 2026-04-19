@@ -1407,11 +1407,11 @@
         },
         {
             "name": "mamluk/tavshan",
-            "version": "1.5",
+            "version": "1.6",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/library/tavshan",
-                "reference": "1814c9c9e0bdcb85fe6de43b0c41d34adb17358c"
+                "reference": "8e070a2e0812275e5a0dbd4c7b2c204c9d7f6127"
             },
             "require": {
                 "amphp/parallel": "^2.3",
@@ -1438,7 +1438,7 @@
                 "Rabbit MQ",
                 "queues"
             ],
-            "time": "2026-04-18T20:26:37+00:00"
+            "time": "2026-04-19T06:16:13+00:00"
         },
         {
             "name": "monolog/monolog",
