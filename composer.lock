@@ -1098,11 +1098,11 @@
         },
         {
             "name": "kipchak/driver-config",
-            "version": "1.13",
+            "version": "1.14",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "912601033809f064bdf6215b93243a4d429164b9"
+                "reference": "3c4e606c2a99e77e29f47b84f7359f4c754be215"
             },
             "require": {
                 "kipchak/core": "^2"
@@ -1126,15 +1126,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:45:14+00:00"
+            "time": "2026-04-16T11:42:02+00:00"
         },
         {
             "name": "kipchak/driver-logger",
-            "version": "1.15",
+            "version": "1.16",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "55e055d7cd24e26670feb95731db5dc2148dc263"
+                "reference": "ef3959f8dbbff26780497690450e0e5e199be859"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -1160,7 +1160,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:45:27+00:00"
+            "time": "2026-04-16T11:42:13+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1407,11 +1407,11 @@
         },
         {
             "name": "mamluk/tavshan",
-            "version": "1.4",
+            "version": "1.5",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/library/tavshan",
-                "reference": "19b558c75b04871b8bc5a6439ad7e426509e2bc2"
+                "reference": "1814c9c9e0bdcb85fe6de43b0c41d34adb17358c"
             },
             "require": {
                 "amphp/parallel": "^2.3",
@@ -1438,7 +1438,7 @@
                 "Rabbit MQ",
                 "queues"
             ],
-            "time": "2025-12-28T10:45:41+00:00"
+            "time": "2026-04-18T20:26:37+00:00"
         },
         {
             "name": "monolog/monolog",
