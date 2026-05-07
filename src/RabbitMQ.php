@@ -23,10 +23,32 @@ class RabbitMQ implements Interfaces\Driver
         $configFileName = $configFileName ?? 'kipchak.rabbitmq';
         $connection = Config::get($configFileName);
         $queues = $connection['queues'];
-        unset($connection['queues']);
+
+        $tuning = [
+            'maxRetries'   => $connection['maxRetries']   ?? 3,
+            'heartbeat'    => $connection['heartbeat']    ?? 60,
+            'keepalive'    => $connection['keepalive']    ?? true,
+            'readTimeout'  => $connection['readTimeout']  ?? 120.0,
+            'writeTimeout' => $connection['writeTimeout'] ?? 120.0,
+        ];
+
+        foreach (['queues', 'maxRetries', 'heartbeat', 'keepalive', 'readTimeout', 'writeTimeout'] as $k) {
+            unset($connection[$k]);
+        }
+
         foreach ((array) $queues as $queue) {
-            self::$container->set('drivers.queue.rabbitmq.' . $queue['name'], function (ContainerInterface $c) use ($connection, $queue): Queue {
-                return new Queue($connection, Logger::get(), $queue['name'], $queue['channel']);
+            self::$container->set('drivers.queue.rabbitmq.' . $queue['name'], function (ContainerInterface $c) use ($connection, $queue, $tuning): Queue {
+                return new Queue(
+                    $connection,
+                    Logger::get(),
+                    $queue['name'],
+                    $queue['channel'],
+                    $tuning['maxRetries'],
+                    $tuning['heartbeat'],
+                    $tuning['keepalive'],
+                    $tuning['readTimeout'],
+                    $tuning['writeTimeout'],
+                );
             });
         }
 
