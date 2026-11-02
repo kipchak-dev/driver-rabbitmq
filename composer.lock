@@ -531,16 +531,16 @@
         },
         {
             "name": "amphp/process",
-            "version": "v2.1.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/process.git",
-                "reference": "583959df17d00304ad7b0b32285373f985935643"
+                "reference": "6ee0d11112a9b1338b7dc270d51f254e872c90b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/process/zipball/583959df17d00304ad7b0b32285373f985935643",
-                "reference": "583959df17d00304ad7b0b32285373f985935643",
+                "url": "https://api.github.com/repos/amphp/process/zipball/6ee0d11112a9b1338b7dc270d51f254e872c90b5",
+                "reference": "6ee0d11112a9b1338b7dc270d51f254e872c90b5",
                 "shasum": ""
             },
             "require": {
@@ -587,7 +587,7 @@
             "homepage": "https://amphp.org/process",
             "support": {
                 "issues": "https://github.com/amphp/process/issues",
-                "source": "https://github.com/amphp/process/tree/v2.1.0"
+                "source": "https://github.com/amphp/process/tree/v2.1.1"
             },
             "funding": [
                 {
@@ -595,7 +595,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-31T15:11:55+00:00"
+            "time": "2026-11-01T22:46:42+00:00"
         },
         {
             "name": "amphp/serialization",
@@ -1064,11 +1064,11 @@
         },
         {
             "name": "kipchak/core",
-            "version": "3.13",
+            "version": "3.14",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "0c4cb01c5697de81d8613acefc3bd760701e17c9"
+                "reference": "6d7325909995d3f38808e48249d97f1b39c85aa3"
             },
             "require": {
                 "cuyz/valinor": "^2",
@@ -1097,15 +1097,15 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2026-11-01T05:25:39+00:00"
+            "time": "2026-11-02T11:05:17+00:00"
         },
         {
             "name": "kipchak/driver-config",
-            "version": "1.31",
+            "version": "1.32",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "147e0622e03a199d65e410f1834a8b40baec5e63"
+                "reference": "38f7012f3bf8aa6c0f2d2df61b2c21161cc462d2"
             },
             "require": {
                 "kipchak/core": "^2 || ^3"
@@ -1129,15 +1129,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-11-01T05:25:57+00:00"
+            "time": "2026-11-02T11:05:36+00:00"
         },
         {
             "name": "kipchak/driver-logger",
-            "version": "1.36",
+            "version": "1.37",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "032af3abc18ba3707d543b0c8eafcdd104c6c8b8"
+                "reference": "ba92e6aaaf182a49c4f64383947d531527116916"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
@@ -1163,7 +1163,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-11-01T05:26:20+00:00"
+            "time": "2026-11-02T11:05:56+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1936,16 +1936,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "1fe20b9acb08ce810cec24d8a9d02e7c13426e4c"
+                "reference": "6077cecfed9e371993d3aa339b0afeb23f7bf636"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/1fe20b9acb08ce810cec24d8a9d02e7c13426e4c",
-                "reference": "1fe20b9acb08ce810cec24d8a9d02e7c13426e4c",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/6077cecfed9e371993d3aa339b0afeb23f7bf636",
+                "reference": "6077cecfed9e371993d3aa339b0afeb23f7bf636",
                 "shasum": ""
             },
             "require": {
@@ -1969,9 +1969,6 @@
             },
             "type": "library",
             "autoload": {
-                "files": [
-                    "phpseclib/bootstrap.php"
-                ],
                 "psr-4": {
                     "phpseclib4\\": "phpseclib/"
                 }
@@ -2008,8 +2005,7 @@
                 },
                 {
                     "name": "Jack Worman",
-                    "email": "jack.worman@gmail.com",
-                    "homepage": "https://jackworman.com",
+                    "email": "jack.worman@proton.me",
                     "role": "Developer"
                 }
             ],
@@ -2036,7 +2032,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/4.0.2"
+                "source": "https://github.com/phpseclib/phpseclib/tree/4.0.3"
             },
             "funding": [
                 {
@@ -2052,7 +2048,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-07T19:55:38+00:00"
+            "time": "2026-11-02T10:46:03+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
