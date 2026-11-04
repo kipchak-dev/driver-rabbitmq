@@ -24,5 +24,19 @@
         "mamluk/tavshan": "^1",
         "kipchak/core": "^2 || ^3",
         "kipchak/driver-logger": "^1"
+    },
+    "extra": {
+        "kipchak": {
+            "type": "driver",
+            "config": "sample.config.php",
+            "configName": "kipchak.rabbitmq.php",
+            "initialise": "\\Kipchak\\Driver\\RabbitMQ\\RabbitMQ::initialise($container);",
+            "after": [
+                "kipchak/driver-config",
+                "kipchak/driver-logger"
+            ],
+            "before": [],
+            "docs": "https://kipchak.dev/docs/driver-rabbitmq"
+        }
     }
 }
